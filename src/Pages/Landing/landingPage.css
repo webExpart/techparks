@@ -1,0 +1,6 @@
+.landing-page-body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1111;
+}

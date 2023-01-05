@@ -1,0 +1,34 @@
+.Top-Category-wrapper{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.Top-Category-title{
+    background-color: transparent;
+    box-shadow: var(--card-shadow);
+    padding: 10px 20px;
+    max-width: 300px;
+    color:var(--white-color);
+    border-radius: 5px;
+}
+.Top-Category-list{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+.Top-Category-list-item{
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    gap: .5rem;
+    color: var(--white-color);
+    box-shadow: var(--card-shadow);
+}

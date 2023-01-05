@@ -1,0 +1,176 @@
+.hero-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    padding: 20px;
+    min-height: 90vh;
+    width: 100%;
+    position: relative;
+}
+.hero-wrapper .hero-left{
+    flex: 1;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 1.5rem;
+    border-radius: 5px;
+    background-color: transparent;
+    box-shadow: var(--card-shadow);
+}
+.hero-wrapper .hero-left .hero-headding{
+    color: var(--white-color);
+    font-size: 55px;
+}
+.hero-wrapper .hero-left .hero-subheadding{
+    color: var(--white-color);
+    font-size: 16px;
+}
+.hero-left a{
+    width: 200px;
+    max-width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--card-shadow);
+    border-radius: 5px;
+    color: var(--white-color);
+    background-color: rgba(221, 221, 221, 0.692);
+}
+.hero-right{
+    min-width: 320px;
+    position: relative;
+    flex: 1;
+    max-width: 50%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.hero-right .hero-right-fetures{
+    width: 100%;
+    height: 100%;
+    position: relative;
+   
+}
+.hero-right .hero-right-fetures .robot-image{
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+    
+}
+.socail-image{
+    position: absolute;
+    top: 50px;
+    left: 15px;
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+
+}
+ .fetu-circle{
+ position:absolute;
+ width: 100%;
+ display: flex;
+ align-items: flex-start;
+ justify-content: space-around;
+ flex-wrap: wrap;
+ top: 10px;
+ left: 10px;
+ right: 10px;
+}
+.pulse {
+    animation: pulse infinite;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: infinity;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes pulse {
+    0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    }
+    @keyframes pulse {
+    0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    
+    }
+    }
+    .shake {
+        animation: shake infinite;
+        -webkit-animation-name: shake;
+        animation-name: shake;
+        -webkit-animation-duration: 20s;
+        animation-duration: 20s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        }
+        @-webkit-keyframes shake {
+        0%, 100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        }
+        10%, 30%, 50%, 70%, 90% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+        }
+        20%, 40%, 60%, 80% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+        }
+        }
+        @keyframes shake {
+        0%, 100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        }
+        10%, 30%, 50%, 70%, 90% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+        }
+        20%, 40%, 60%, 80% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+        }
+        } 
+        @media (max-width: 770px) {
+            .fetu-circle{
+                display: none;
+            }
+            .hero-right{
+                display: none;;
+            }
+            .hero-wrapper .hero-left {
+                min-width: 100%!important;
+            }
+            .hero-wrapper .hero-left .hero-headding{
+                color: var(--white-color);
+                font-size: 25px;
+            }
+        }
